@@ -21,15 +21,10 @@ Here is the folder structure of your repository `sindhuja90comp/MTDataProcess` b
 ### **Folder Structure**
 ```
 MTDataProcess/
+├── goresults.txt
 ├── go/
 │   ├── main.go
-│   ├── src/
-│       └── dataprocessor/
-│           ├── task.go
-│           ├── worker.go
-│           ├── sharedqueue.go
-│           ├── resultsaver.go
-│           └── go.mod
+│   
 ├── java/
 │   ├── src/
 │       └── main/
@@ -39,6 +34,9 @@ MTDataProcess/
 │                   ├── SharedQueue.java
 │                   ├── Worker.java
 │   └── results_java.txt
+│   
+├── .gitignore
+├── README.md
 ```
 
 ---
@@ -47,12 +45,6 @@ MTDataProcess/
 1. **`go/` Directory**
    - Contains Go code for the project.
    - **`main.go`**: The main entry point for the Go application. It initializes the task queue, starts worker goroutines, and processes tasks.
-   - **`src/dataprocessor/`**: A subdirectory for modular Go components.
-     - **`task.go`**: Defines the `Task` struct and its `Process` method for task-specific processing logic.
-     - **`worker.go`**: Implements the worker function to process tasks using the shared queue and result saver.
-     - **`sharedqueue.go`**: Manages a thread-safe task queue for communication between worker threads.
-     - **`resultsaver.go`**: Handles saving the processed task results to a file.
-     - **`go.mod`**: Go module configuration file defining the project dependencies and module path.
 
 2. **`java/` Directory**
    - Contains Java code for the project.
